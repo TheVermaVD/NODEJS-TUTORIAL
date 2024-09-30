@@ -1,0 +1,98 @@
+#QWhat is NodeJS ?
+
+- NodeJs is a runtime environment for/based on Javascript Language, It is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+
+Note : If we want to use JavaScript anywhere not only in browser, like we want to use it on our operating system or any other environment(e.g Server), then we can use node and that runs the Javascript there, that is NodeJS for us. 
+
+Note : NodeJS is Single-threaded, asynchronous and Non-Blocking I/O (means Input & output doesn't get blocked) Programming, which is very memory efficient.
+
+#Q : Is Nodejs a Web Server ?
+
+Answer : No It is not an Web server as It is a run-time environment for Js but We can make nodeJS as Web Server with help of Express Framwork and Electron Framework. 
+
+#Q : Three Ways of Running NodeJs Code : -
+
+Ways 1/REPL : Run on User's Command Prompt (We can't save code) -
+
+Check Node is Install or Not : node -v (If yess then nodeJS is install Globally)
+
+To Run NodeJS Code i.e JS code : Hit >node 
+
+(Now you emtered into NodeJS environment, you can now type your JS code just like we could do in browser console.)
+
+Now, TO come out of Entered Node Environment, Hit > ctrl +d once or ctrl +c twice or .exit 
+
+Ways 2 : Make Folder and File on Code Editor -
+
+And Save the file name with .js file name and save it.
+
+After that Run same file name with below command -
+
+> node file_name.js
+
+OR, For nested JS File name -
+>node Basics/file_name.js  (But prefer to execute code after entering into current folder)
+
+Ways3: Run NodeJS code via package.json scripts object property -
+
+step1 : define the script first - scripts : {"check" : "node first.js",
+"start" : "node first.js" }
+
+step2 : To run code-  > npm run <defined_property_name>
+
+NOte : property name defined with start keyword is a special type of keyword in NOdeJS which doesnot need to use run explicitely(optional) -
+
+> npm start or npm run start
+
+
+
+
+
+
+
+
+1. Javascript and NodeJs is not exactly same,(syntax is same) coz Javascript can't run server so we can't connect Javascript to Database, whereas NOdeJS runs on server so we can able to connect to Database.
+
+Note : Javascript runs only the user's browser based on chromeV8 Engine  whereas NodeJS can runs on user system i.e on server.
+
+2. Client Side Vs Server Side Mechanism : -
+
+Client ---request---> Server
+       <---response--- 
+
+Where, Javascript, HTML, CSS runs on Client Side only and NodeJs, PHP, Java, phython runs on ServerSide Language. (Note: The lamguage which can be connectable to Database called server side languages coz database always present at server side and Javascript present at the client side so cant access database)
+
+3.  NodeJs is nothng but a server side language, how we made server side language by basically pulling out the chromeV8 Engine out of Chrome which runs Javascript and then NodeJs uses Javascript for server side.
+
+4. What NodeJs Developer Makes or Does ? 
+
+        a) To make API with NodeJs (80 to 90%), so that we can connect client side and server side with API.
+        b) API made using NOdeJs can usuable for any client side applications like Website, Android, IOS etc.
+
+        c) Using NodeJS we can make website but very rarely we make website but mostlty we make API.
+
+
+
+
+-------------------------------------------------------------------------------
+
+#Important NOtes : -        
+
+1.) To measure the time stamp at which the perticular line has executed use -
+
+const t1 = performance.now() ; //To measure start time of this line
+const t2 = performance.now() ; //To measure end time of this line
+
+console.log(t2-t1); //To log the time difference taken into executing codes between t1 and t2.
+
+Way2 : 
+
+console.time() ; //To start a timer in the console for the same line
+console.timeEnd() ; //To end the start timer and console the time taken as result to the console.
+
+2.) NOte : __dirname to know current directory and __filename for knowing the current directory with file path name.
+
+console.log("This is Current Directory ", __dirname);
+console.log("Directory With Current FileName ", __filename);
+
+3.) To clear the terminal of vs code : > cls 

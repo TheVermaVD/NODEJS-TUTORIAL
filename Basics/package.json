@@ -1,0 +1,27 @@
+{
+  "name": "nodejs_tutorial",
+  "version": "1.0.0",
+  "description": "we are learning nodejs for the first time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startt": "node 3.FileSystem.js",
+    "nodemoncheck": "nodemon 0.REPL_and_NPM.js"
+  },
+  "keywords": [
+    "theverma",
+    "rowdy"
+  ],
+  "author": "Prakash",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^5.0.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

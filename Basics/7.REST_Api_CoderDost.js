@@ -113,7 +113,7 @@ const express = require("express");
 const { type } = require("os");
 
 const server = express();
-const db = fs.readFileSync("Basics/Web Server/Example/data.json", "utf-8");
+const db = fs.readFileSync("Basics/Web Server - CoderDost/Example/data.json", "utf-8");
 
 const dbObj = JSON.parse(db); //JS object now
 
@@ -130,7 +130,7 @@ server.get("/products", (req, res)=>{
     // res.set('Content-Type', 'application/json');
     // res.send(db);
 
-    res.json(dbObj)
+    res.json(dbArry)
 
 
 }) ; //Here REST understands : products is a resource.
@@ -144,7 +144,7 @@ server.get("/products/:id", (req, res)=>{
     const id = req.params.id; 
     // console.log(id, typeof id);//return string datatype.
 
-    const id_Obj = dbObj.products.find((item, index)=>{
+    const id_Obj = dbArry.find((item, index)=>{
 
         return item.id=== +(id); //converted to number datatype.
     });
@@ -272,4 +272,4 @@ D  - Delete (DELETE)
 */
 
 
-server.listen(8008);
+server.listen(8008,()=> console.log("Connected To Port at 8008!"));

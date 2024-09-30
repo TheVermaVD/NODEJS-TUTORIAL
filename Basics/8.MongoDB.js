@@ -434,7 +434,7 @@ Ex : {id :1}   - filter the id=1 document from the current collection we are!
 
 
 
-#9.) MongoDB Query API : -
+#15.) MongoDB Query API : -
 
 The MongoDB Query API is the way you will interact with your data.
 
@@ -452,6 +452,19 @@ iv) Graph and geospatial queries.
 v) Full-text search.
 vi) Indexing to improve MongoDB query performance.
 vii) Time series analysis.
+
+
+#16.) MOngoDB Data backup and restoring -
+
+Mongodump and Mongorestore : These utilities comes with community server and can be found in CMD/terminal. They are not the part of Mongo CLI client.
+
+Mongodump command is used to take backup of complete database or some collections
+>mongodump  --db accounts 
+Above command takes backup of database accounts and stores into a directory named dump
+
+Mongorestore command is used to restore database
+>mongorestore --db accounts dump/accounts
+Above command restore your database accounts from backup directory dump
 
 
 
